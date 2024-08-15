@@ -268,15 +268,24 @@ margin-bottom: 27px;
   .footer {
     display: flex;
     justify-content: space-between;
-    padding: 180px 50px 80px;
+    margin: 180px 50px 80px;
+    width: 1000px;
+    height: 98px;
   }
   
   .footer__address{
     font-style: normal;
+    width: 240px;
+    height: 98px;
   }
-  .ffooter__link{
-    line-height: 18px;
-    font-style: normal;
+  .footer__link{
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    line-height: 24.3px;
+  }
+  .footer_item-text{
+    line-height: 24.3px;
   }
   
   .footer__menu-list {
@@ -287,27 +296,28 @@ margin-bottom: 27px;
     gap: 0;
     white-space: nowrap;
     justify-content: center; 
+   
   }
 
   
   .footer__menu-link {
     font-size: 18px;
     line-height: normal;
-    text-underline-position: under;
+    border-bottom: 1px solid black;
   }
   
   .footer__menu-link_active {
     text-decoration: none;
+    font-size: 18px;
+    
   }
   .footer__menu-social-lis{
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-flow: row nowrap;
 	width:  240px;
-    row-gap: 48px;
-    white-space: nowrap;
-    justify-content: center; 
+    gap: 48px;
   }
+
   .footer__social-list {
     display: flex;
     list-style: none;
