@@ -66,12 +66,14 @@
 
 .cover {
     width: 100%;
-    height: 757px;
+    height: auto;
+    border: 1px solid transparent;
+    box-sizing: content-box;
     position: relative;
     background-image: url("/images/cover.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 0%;
+    background-position: 50% 0;
 }
 
 .overlay {
@@ -80,19 +82,17 @@
     opacity: 0.6;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
 }
 
 .cover__title {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    margin: 165px 50px 135px;
+    width: calc(100% - 100px);
     font-weight: bold;
     color: white;
     font-size: 100px;
     letter-spacing: 0.3em;
-    padding: 165px 50px;
 }
 
 .letter-spacing-extended {
@@ -100,17 +100,20 @@
 }
 
 .aligned-text {
+    display: block;
+    line-height: 100px;
+}
+
+.aligned-text:first-child {
     line-height: 115px;
 }
 
 .aligned-text_center {
-    line-height: 100px;
     margin: 20px 0;
-    padding-left: 286px;
+    text-align: center;
 }
 
 .aligned-text_right {
-    line-height: 100px;
     text-align: right;
 }
 
@@ -119,16 +122,14 @@
 }
 
 .cover__description {
-    position: absolute;
-    z-index: 3;
-    padding: 655px 50px 51px 78px;
+    margin: 0 50px 51px 78px;
+    width: calc(100% - 128px);
+    position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     color: white;
-    width: 100%;
-    height: 100%;
 }
 
 .cover__description-text {
@@ -151,6 +152,7 @@
 }
 
 .bet-button {
+    text-transform: uppercase;
     background: transparent;
     border: 1px solid white;
     width: 256px;
