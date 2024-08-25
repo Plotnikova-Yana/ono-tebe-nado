@@ -1,7 +1,6 @@
 .header {
     margin: 92px 24px 96px;
     width: calc(100% - 48px);
-    height: 105px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
