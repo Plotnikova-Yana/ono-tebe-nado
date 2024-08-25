@@ -151,6 +151,7 @@
 }
 
 .bet-button {
+    font-family: inherit;
     text-transform: uppercase;
     background: transparent;
     border: 1px solid white;
