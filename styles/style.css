@@ -50,8 +50,12 @@
 
 .address {
     width: 240px;
-    line-height: 24px;
+    line-height: 24.3px;
     font-style: normal;
+}
+
+.address_item-text {
+    margin-top: 1px;
 }
 
 .header__address {
@@ -269,14 +273,6 @@
     width: calc(100% - 25px - 334px);
 }
 
-.about__column_text {
-    display: block;
-    width: 693px;
-    height: 449px;
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
 .about__title {
     margin-top: 136px;
     font-size: 40px;
@@ -316,7 +312,6 @@
 .footer {
     margin: 180px 50px 88px;
     width: calc(100% - 100px);
-    height: 98px;
     display: flex;
     justify-content: space-between;
 }
